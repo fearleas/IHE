@@ -6,9 +6,9 @@ void setup() {
 
 void loop() {
 
-if(digitalRead(switchPin) == LOW)
-  digitalWrite(ledPin, LOW);
-else
-  digitalWrite(ledPin, HIGH);
+  if(digitalRead(switchPin) == LOW)
+    digitalWrite(ledPin, LOW);
+  else
+    digitalWrite(ledPin, HIGH);
 
 }

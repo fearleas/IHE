@@ -1,4 +1,5 @@
 const int switchPin = 2;
+const int ledPin = 12;
 
 void setup() {
   pinMode(switchPin, INPUT);

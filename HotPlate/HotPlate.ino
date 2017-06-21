@@ -1,13 +1,13 @@
 unsigned long echo = 0;
 unsigned long ultrasoundValue = 0;
 
-int rDistance = 15; //binnen deze afstand is er wel een pan
-int lTime = 1;      // tijd dat fornuis aan en leeg mag zijn in min 
-                    //*?koelt niet direct af PROBLEEM!!!*?
+int rDistance = 15;                          //binnen deze afstand is er wel een pan
+int lTime = 1;                               // tijd dat fornuis aan en leeg mag zijn in min 
+                                             //*?koelt niet direct af PROBLEEM!!!*?
 
-int mDistance = 0;  //gemeten afstand
-int heat = 0;       // wel of geen hitte
-boolean message = false; // is er al een bericht  verstuurd?
+int mDistance = 0;                           //gemeten afstand
+int heat = 0;                                // wel of geen hitte
+boolean message = false;                     // is er al een bericht  verstuurd?
 
 
 int ultrasoundPin = 4; //D2
@@ -18,9 +18,9 @@ int buttonPin = 2;     //D4
 void setup()
 {
   Serial.begin(9600);
-  pinMode(ultrasoundPin, OUTPUT);           //Ultrasound
-  pinMode(heatPin, INPUT);                  //Hittesensor
-  pinMode(relaisPin, OUTPUT);               //Relais
+  pinMode(ultrasoundPin, OUTPUT);            //Ultrasound
+  pinMode(heatPin, INPUT);                   //Hittesensor
+  pinMode(relaisPin, OUTPUT);                //Relais
   pinMode(buttonPin, INPUT);                 //Knop
 }
 

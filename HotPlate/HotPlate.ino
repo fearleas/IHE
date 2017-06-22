@@ -94,6 +94,8 @@ void loop()
   if (mDistance > rDistance && heat == 1)
   {
     delay(lTime * 60000);
+    mDistance = ultrasound();               //afstand pan-sensor
+    heat = digitalRead(heatPin);            //warmte test.
     if (mDistance > rDistance && heat == 1 && !message)
     {
       message == true;
